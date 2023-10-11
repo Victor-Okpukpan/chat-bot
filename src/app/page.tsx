@@ -26,7 +26,7 @@ export default function Home() {
           </div>
 
           <div className="space-y-2">
-            <p className="infoText">Change the chatGPT Model to use</p>
+            <p className="infoText">Uses the GPT-3.5-Turbo Model</p>
             <p className="infoText">Messages are stored in Firebase&apos;s Firestore</p>
             <p className="infoText">Hot toast notifications when chatGPT is thinking</p>
           </div>

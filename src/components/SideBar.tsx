@@ -6,7 +6,7 @@ import NewChat from "./NewChat"
 import { collection, orderBy, query } from "firebase/firestore";
 import { db } from "../../firebase";
 import ChatRow from "./ChatRow";
-import ModelSelection from "./ModelSelection";
+
 
 export default function SideBar() {
   const { data: session } = useSession();
@@ -21,10 +21,6 @@ export default function SideBar() {
         <div>
           <NewChat />
 
-          <div className="hidden sm:inline">
-            <ModelSelection />
-          </div>
-
           <div className="flex flex-col space-y-2">
             {loading && (
               <div className="animate-pulse text-center text-white">
@@ -38,7 +34,10 @@ export default function SideBar() {
         </div>
       </div>
 
-      {session && <img src={session.user?.image!} alt={session.user?.name!} className="mx-auto hover:opacity-50 cursor-pointer w-12 h-12 rounded-full" onClick={() => signOut()} />}
+      <div className="flex items-center space-x-2 w-max mx-auto">
+      {session && <img src={session.user?.image!} alt={session.user?.name!} className="hover:opacity-50 cursor-pointer w-12 h-12 rounded-full" onClick={() => signOut()} />}
+      {/* <button type="button" onClick={() => signOut()} className="py-">Log out</button> */}
+      </div>
     </div>
   );
 }
