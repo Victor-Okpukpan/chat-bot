@@ -14,6 +14,26 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "ChatBot by Victor",
   description: "A NextJs, Tailwind, Typescript, and Firebase openAI chatbot created by The Frontend Oracle - Victor.",
+  keywords: ["chatbot", "tailwind", "typescript", "firebase", "nextjs", "openai", "chatgpt", "clone"],
+  authors: [{name: "The Frontend Oracle - Victor Okpukpan"}],
+  openGraph: {
+    title: 'ChatBot by Victor',
+    description: 'A NextJs, Tailwind, Typescript, and Firebase openAI chatbot created by The Frontend Oracle - Victor.',
+    url: 'https://chat-botgpt.vercel.app',
+    siteName: 'chat-botgpt',
+    images: [
+      {
+        url: 'https://links.papareact.com/89k',
+        width: 800,
+        height: 600,
+      }
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  icons: {
+    icon: [{ url: "/icon.svg"},new URL("/icon.svg", "https://links.papareact.com/89k")]
+  }
 };
 
 export default async function RootLayout({
