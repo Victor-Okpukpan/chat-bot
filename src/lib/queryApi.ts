@@ -18,7 +18,9 @@ const query = async (
   // conversation.push({ role: 'user', content: prompt });
 
   if (!conversations[chatId]) {
-    conversations[chatId] = []; // Initialize a new conversation for the chatId
+    conversations[chatId] = [
+      { role: "system", content: "You are a helpful assistant."}
+    ]; // Initialize a new conversation for the chatId
   }
 
   conversations[chatId].push({ role: 'user', content: prompt });
@@ -36,8 +38,8 @@ const query = async (
     .catch((err) => `there was an error ${err.message}`);
 
     conversations[chatId].push({ role: 'assistant', content: res });
-
-  return res;
+    
+    return res;
 };
 
 export default query;

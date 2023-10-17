@@ -5,7 +5,6 @@ import { FormEvent, useState } from "react";
 import { FaPaperPlane } from "react-icons/fa";
 import { db } from "../../firebase";
 import { toast } from "react-hot-toast";
-import ModelSelection from "./ModelSelection";
 
 
 type Props = {
