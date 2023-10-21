@@ -3,7 +3,7 @@ import { BsLightningCharge, BsShieldExclamation, BsSun } from "react-icons/bs";
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center h-screen text-white px-2">
-      <h1 className='text-5xl font-bold mb-20'>chatGPT</h1>
+      <h1 className='text-5xl font-bold mb-20'>My ChatBot</h1>
 
       <div className="flex flex-row space-x-2 text-center overflow-y-auto md:space-y-0">
         <div>
@@ -14,8 +14,8 @@ export default function Home() {
 
           <div className="space-y-2">
             <p className="infoText">&quot;Explain something to me&quot;</p>
-            <p className="infoText">&quot;What is the difference between a dog and a cat?&quot;</p>
-            <p className="infoText">&quot;What is the color of the sun?&quot;</p>
+            <p className="infoText">&quot;Are ghosts real?&quot;</p>
+            <p className="infoText">&quot;Who is God?&quot;</p>
           </div>
         </div>
 
