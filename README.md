@@ -21,7 +21,7 @@ Make sure you have the following installed on your machine:
    
 5. Start the Next.js development server
    ```bash
-   npm install
+   npm run dev
    ```
    
 Open your web browser and visit http://localhost:3000. You should see the application running, and any changes you make will be hot-reloaded.
